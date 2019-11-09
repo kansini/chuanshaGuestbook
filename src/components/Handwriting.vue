@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="">
         <canvas id="canvas" @mouseup="isBegin=false"></canvas>
         <div @click="clearAll()" style="color: #FF3333;">clear</div>
     </div>
@@ -85,8 +85,8 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     canvas {
-        margin: 16px auto;
+        margin: 24px auto;
     }
 </style>
