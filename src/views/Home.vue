@@ -35,7 +35,7 @@
 <style lang="scss" scoped>
     .home {
         .logo {
-            width: calc(900rem / 96);
+            width: calc(1000rem / 96);
             height: calc(128rem / 96);
             margin: 0 auto;
             padding: calc(144rem / 96) 0 calc(0rem / 96) 0;
