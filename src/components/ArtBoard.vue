@@ -36,7 +36,7 @@
                 <div @click="clearAll" class="btn-clear"></div>
 
             </div>
-            <div class="btn-submit">提交</div>
+            <div class="btn-submit" @click="submit">提交</div>
         </div>
 
     </div>
@@ -161,7 +161,9 @@
             setSize(size, pSize) {
                 this.currentSize = size
                 this.lineWidth = pSize
-                console.log(this.lineWidth)
+            },
+            submit(){
+                alert('提交成功！')
             }
 
         }
