@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "xiaokai";
+    src: url("../fonts/xiaokai/xiaokai.woff2") format("woff2"),
+    url("../fonts/xiaokai/xiaokai.woff") format("woff"),
+    url("../fonts/xiaokai/xiaokai.ttf") format("truetype"),
+    url("../fonts/xiaokai/xiaokai.eot") format("embedded-opentype"),
+    url("../fonts/xiaokai/xiaokai.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: "kaiti";
+  src: url("../fonts/kaiti/kaiti.woff2") format("woff2"),
+       url("../fonts/kaiti/kaiti.woff") format("woff"),
+       url("../fonts/kaiti/kaiti.ttf") format("truetype"),
+       url("../fonts/kaiti/kaiti.eot") format("embedded-opentype"),
+       url("../fonts/kaiti/kaiti.svg") format("svg");
+	  /* font-weight: Regular;
+	   font-style: normal; */
+}

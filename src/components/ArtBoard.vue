@@ -13,7 +13,7 @@
             <div class="btn-undo"></div>
             <div class="btn-redo"></div>
             <div @click="clearAll" class="btn-clear"></div>
-            <div class="btn-submit"></div>
+            <div class="btn-submit">提交</div>
         </div>
 
     </div>
@@ -109,23 +109,34 @@
     }
 
     .btn-group {
-        margin: 0 auto;
-        padding-top: calc(680rem / 96);
-        padding-left: calc(80rem / 96);
+        position: absolute;
+        top: calc(920rem / 96);
+        left: calc(300rem / 96);
         box-sizing: border-box;
         width: calc(1400rem / 96);
         display: flex;
         justify-content: space-between;
+        z-index: 999;
 
         [class^="btn-"] {
             width: calc(64rem / 96);
             height: calc(64rem / 96);
             border-radius: 100px;
             text-align: center;
-            background: rgba(235, 195, 134, .8);
-            box-shadow: 0 0 20px rgba(235, 195, 134, .6);
+            background: rgba(255, 255, 255, .8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            //background: rgba(235, 195, 134, .8);
+            //box-shadow: 0 0 20px rgba(235, 195, 134, .6);
+            font-family: "xiaokai";
             cursor: pointer;
             transition: all ease .6s;
+            &:nth-last-child(1){
+                font-size:calc(20rem / 96);
+                text-align: center;
+                line-height: calc(64rem / 96);
+                width: calc(160rem / 96);
+            }
+
 
             &:hover {
                 background: rgba(235, 195, 134, 1);
@@ -139,7 +150,7 @@
                 height: calc(32rem / 96);
                 margin: calc(16rem / 96) auto;
                 border-radius: 100px;
-                background: rgba(0, 0, 0, .8);
+                background: rgba(0, 0, 0, .6);
             }
         }
 

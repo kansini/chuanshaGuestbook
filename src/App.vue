@@ -5,6 +5,9 @@
 </template>
 
 <style lang="scss">
+    body{
+        overflow: hidden;
+    }
     * {
         margin: 0;
         padding: 0;
@@ -18,6 +21,6 @@
         height: 100vh;
         background: url("./assets/img/mainbg.jpg") no-repeat center;
         background-size: 100% 100%;
-        overflow: hidden;
+
     }
 </style>
