@@ -387,7 +387,7 @@
             border-radius: 100px;
             text-align: center;
             //background: rgba(255, 255, 255, .6);
-            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            box-shadow: 0 0 10px rgba(235, 195, 134, 1);
             background: #B97E39;
 
             color:#fff;
@@ -397,7 +397,7 @@
             transition: all ease .6s;
             &:hover{
                 background: #a06f35;
-                box-shadow: 0 0 20px rgba(235, 195, 134, .6);
+                box-shadow: 0 0 30px rgba(235, 195, 134, 1);
             }
 
         }
