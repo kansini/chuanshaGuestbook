@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <div class="logo"></div>
+        <div class="logo" @click="toggleFullscreen"></div>
         <art-board/>
         <div class="birds"></div>
         <div class="cloud"></div>
@@ -10,12 +10,26 @@
 
 <script>
     import artBoard from '@/components/ArtBoard'
+    import screenfull from 'screenfull'
 
     export default {
         name: 'home',
         components: {
             artBoard
+        },
+        data() {
+            return {
+                isFullScreen: false
+            }
+        },
+        methods: {
+            toggleFullscreen() {
+
+                screenfull.toggle()
+                this.isFullScreen = !this.isFullScreen
+            }
         }
+
     }
 </script>
 <style lang="scss" scoped>
@@ -54,6 +68,7 @@
             mix-blend-mode: multiply;
             animation: cloud linear 6s infinite;
         }
+
         .cloud2 {
             position: absolute;
             width: calc(240rem / 96);
