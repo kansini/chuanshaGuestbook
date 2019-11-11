@@ -264,7 +264,7 @@
                     position: relative;
                     display: block;
                     border-radius: 100px;
-                    background: rgba(0, 0, 0, .6);
+                    background: rgba(0, 0, 0, .7);
                     box-shadow: 0 0 0 4px rgba(0, 0, 0, .1);
                     transition: all ease .6s;
                 }
